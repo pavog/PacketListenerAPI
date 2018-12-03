@@ -2,10 +2,7 @@ language: java
 jdk:
 - oraclejdk8
 
-script: "mvn javadoc:aggregate deploy --settings settings.xml"
-before_script:
-  - "chmod +x .script/upload-javadoc.sh"
-after_success: ".script/upload-javadoc.sh"
+script: "mvn install"
 env:
   global:
   - secure: "Bjc0jQlwoFJ0vgyekXcXFTCP0MQA5xEkm4abow2FIW7hgcXR5C9/6EUMW0HSLAU3+CU+06ByiXcY8BwcvKd0HiZYpRUmsjOXFRXKlRf9VUU6HJj88EzAICaynfWvULGsXCAf1EABSNvwgmYwKtX+DL4BnJtMgEpUKA9/6tfsFz0z9lIleUc0gCz+bSn1PM17HmFaVi05M2+A6mY0nIR7l3Cd3jgm1Q6LaN9mElUfq/qjqwb4YMYlo9yuALMbJ1dV2N0hHpWJbW5PraK/oV2+G8zpNgn0U+V279+9UdmbuUNbtY+Q4nHclpE6XMy4PJGnYISaS1MbdfZzW6d0UoSW45vZuzRKbRMXEve3RmDyaLI6Dc+T5n6xyduvpRX9Tgxno6kpSecZy/jiFyCiIq5NVUGmktOPBKDzIbvP04WOw/6koivL0Zip8hyqbC+CGnfevxZXBNhozRJEFyZFVk2Kb7CgkhJwIbcjq5Q6zljb03SJVTd8UE4JxcYmB2pYvjzWPowvT1NhrENJ6gdArol66Ifkfj5dGUcMegX+6HlAISyewiH9UjhQuBZt19XAsnLIdU6iYglvfZAZKbkrUsK5cVzBJiWFTiGH+LZOBonggRke7lTwsg9EFl4/oUB6CTp0Yg9JBVKwvQqpNbvbWHGSs2mtSLuAXcVs+OGgRBRSi6A="
