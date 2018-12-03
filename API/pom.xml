@@ -34,20 +34,19 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>org.inventivetalent</groupId>
-            <artifactId>reflectionhelper</artifactId>
+            <groupId>com.github.InventivetalentDev</groupId>
+            <artifactId>ReflectionHelper</artifactId>
             <version>1.14.2-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>org.inventivetalent</groupId>
-            <artifactId>apimanager</artifactId>
-            <version>1.0.3-SNAPSHOT</version>
+            <groupId>com.github.InventivetalentDev</groupId>
+            <artifactId>APIManager</artifactId>
+            <version>master</version>
         </dependency>
-
         <dependency>
-            <groupId>org.inventivetalent.spiget-update</groupId>
+            <groupId>com.github.InventivetalentDev.SpigetUpdater</groupId>
             <artifactId>bukkit</artifactId>
-            <version>1.4.1</version>
+            <version>1.4.0</version>
         </dependency>
     </dependencies>
 
