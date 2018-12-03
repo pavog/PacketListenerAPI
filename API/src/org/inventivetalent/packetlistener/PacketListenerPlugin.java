@@ -3,7 +3,6 @@ package org.inventivetalent.packetlistener;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.inventivetalent.apihelper.APIManager;
-import org.inventivetalent.packetlistener.metrics.Metrics;
 import org.inventivetalent.update.spiget.SpigetUpdate;
 import org.inventivetalent.update.spiget.UpdateCallback;
 import org.inventivetalent.update.spiget.comparator.VersionComparator;
@@ -39,8 +38,6 @@ public class PacketListenerPlugin extends JavaPlugin {
 				getLogger().info("Plugin is up-to-date");
 			}
 		});
-
-		new Metrics(this);
 
 		//Initialize this API if the plugin got enabled
 		APIManager.initAPI(PacketListenerAPI.class);
